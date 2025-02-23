@@ -1,0 +1,20 @@
+{
+  "name": "jenkins-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests": "npx playwright test",
+    "specific_test": "npx playwright test --grep taw2.spec.js",
+    "test_by_tag": "npx playwright test --grep @env-test",
+    "2show_report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.5"
+  }
+}
