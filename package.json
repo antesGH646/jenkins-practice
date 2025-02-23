@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "tests": "npx playwright test",
-    "specific_test": "npx playwright test --grep taw2.spec.js",
-    "test_by_tag": "npx playwright test --grep @env-test",
-    "2show_report": "npx playwright show-report"
+    "specific_test": "npx playwright test --grep locators-intro.spec.js",
+    "smoke": "npx playwright test --grep @smoke",
+    "regression": "npx playwright test --grep @regression",
+    "critical": "npx playwright test --grep @critical",
+    "report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
